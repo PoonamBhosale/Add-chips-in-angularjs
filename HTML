@@ -1,0 +1,13 @@
+<div class="md-padding flex dragable-group" dnd-list dnd-drop="vm.onDrop(item, index)">
+                              <md-chips class="custom-chips" ng-model="vm.vegObjs" readonly="vm.readonly" md-transform-chip="vm.newVeg($chip)" md-removable="vm.removable">
+                                <md-chip-template>
+                                  <span>
+                                    <strong>{{$chip.name}}</strong>
+                                  </span>
+                                </md-chip-template>
+                                <button class="md-chip-remove">
+                                  <md-icon md-font-icon="zmdi zmdi-close"></md-icon>
+                                </button>
+                              </md-chips>
+                                <md-divider></md-divider>
+                            </div>
